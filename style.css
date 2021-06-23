@@ -1,77 +1,16 @@
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 45px;
-  height: 30px;
+@font-face {
+  font-family: Spoqa Han Sans Neo;
+  src: local(SpoqaHanSansNeo-Bold),
+       url(SpoqaHanSansNeo-Bold.woff) format('woff'),
+  font-style: bold;
+  font-weight: bold;
 }
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 5px;
-  bottom: 10px;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 17px;
-  width: 17px;
-  left: 4px;
-  bottom: 2px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-
-
-
-
-
 
 
 
 @charset "UTF-8";
 body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,figure{margin:0;padding:0}
-body,table,table td,input,select,textarea{font-size:12px;font-family: 'Noto Serif KR', serif;}
+body,table,table td,input,select,textarea{font-size:12px;font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
 body{color:#000;font-size:12px;text-align:center;background:#fff}
 li{list-style:none}
 hr{display:none}
@@ -123,8 +62,8 @@ input.text02{width:100%;height:28px;padding:4px 8px 8px;border:1px solid #e5e5e5
 .section_index .writing{margin-left:4px;vertical-align:top}
 .newspaper_info + .writing,.r_vod_txt + .writing,.writing + .writing{margin-left:-3px}
 .date + .writing,.lede + .writing,.icon + .writing,.icon_photo + .writing{margin-left:0}
-.writing2{margin:0 0 0 10px;font-size:12px;font-family:'Noto Serif KR', serif;color:#888}
-.relative_article{font-size:12px;font-family:'Noto Serif KR', serif;color:#888}
+.writing2{margin:0 0 0 10px;font-size:12px;font-family:'Spoca Han Sans Neo', 'sans-serif';color:#888}
+.relative_article{font-size:12px;font-family:'Spoca Han Sans Neo', 'sans-serif';color:#888}
 .writer{display:inline-block;margin:0 0 0 10px;font-size:11px;color:#909090;letter-spacing:-1px}
 .writer2{margin-left:5px;padding-left:5px;color:#909090;font-size:11px;font-weight:normal;background:url(https://ssl.pstatic.net/static.news/image/news/2009/bar_date.gif) no-repeat;letter-spacing:-1px;line-height:13px}
 #container .date,.op_container .date,.container .date{position:relative;display:inline-block;color:#888;font-size:12px;font-weight:normal;letter-spacing:0;padding-left:14px}
@@ -463,7 +402,7 @@ div.snb{padding-right:21px}
 	.floating_btn.stop .floating_inner{bottom:20px}
 }
 #footer{min-width:1080px;clear:both;padding:30px 0 40px 0;text-align:center;background-color:#f2f4f7}
-#footer *{margin:0;padding:0;list-style:none;font-size:12px;font-style:normal;font-family:'Noto Serif KR', serif;line-height:normal}
+#footer *{margin:0;padding:0;list-style:none;font-size:12px;font-style:normal;font-family:'Spoca Han Sans Neo', 'sans-serif';line-height:normal}
 #footer a{text-decoration:none;color:#333}
 #footer a:visited{text-decoration:none;color:#333}
 #footer a:focus{color:#333}
@@ -483,7 +422,7 @@ div.snb{padding-right:21px}
 #footer address em{padding-left:4px;color:#444;font-size:9px;font-family:verdana}
 #footer address .logo{width:57px;height:11px;background-position:0px 0px;display:inline-block;vertical-align:middle;margin-top:-2px}
 #footer .address_cp{margin:-7px 0 16px;font-size:9px;font-family:Verdana}
-#footer .address_cp strong,#footer .address_cp a{font-weight:bold;font-size:11px;font-family:'Noto Serif KR', serif;letter-spacing:-1px;color:#444 !important}
+#footer .address_cp strong,#footer .address_cp a{font-weight:bold;font-size:11px;font-family:'Spoca Han Sans Neo', 'sans-serif';letter-spacing:-1px;color:#444 !important}
 #footer .address_cp a{letter-spacing:0}
 #footer .copyright{padding:3px 0 15px;font-size:11px;color:#7e7e7e}
 .error{clear:both;padding:100px 0;border:1px solid #eaeaea;font-size:13px;text-align:center;letter-spacing:-1px}
@@ -497,7 +436,7 @@ div.snb{padding-right:21px}
 .error_airs{margin-bottom:31px;padding:122px 0 160px;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;text-align:center}
 .error_airs .error_explain{margin-top:14px;font-size:14px;font-weight:bold;line-height:22px;color:#333;letter-spacing:-1px}
 .error_ranking{margin-top:8px;padding:112px 0 87px 280px;background:#fff}
-.error_ranking .error_tit{float:none;font-size:24px;font-weight:400;line-height:32px;letter-spacing:-1px;color:#767678;font-family:'Noto Serif KR', serif}
+.error_ranking .error_tit{float:none;font-size:24px;font-weight:400;line-height:32px;letter-spacing:-1px;color:#767678;font-family:'Spoca Han Sans Neo', 'sans-serif'}
 .error_ranking .error_tit em{display:block}
 .error_ranking .error_desc{margin-top:4px;font-size:16px;line-height:24px;letter-spacing:-0.5px;color:#929294}
 .error_ranking .error_detail_link{display:inline-block;min-width:150px;height:40px;margin-top:25px;border-radius:6px;border:solid 1px #ddd;color:#767678;font-size:17px;line-height:39px;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box}
@@ -506,20 +445,20 @@ div.snb{padding-right:21px}
 .edit_history .error_msg:before{display:inline}
 .edit_history .error_msg img{display:block}
 .edit_history .error_msg p{margin:14px 0 8px;color:#666;line-height:1.5}
-.edit_history .error_msg a{color:#333 !important;margin-left:0;text-decoration:underline;padding:0;border:0;font-family:'Noto Serif KR', serif}
+.edit_history .error_msg a{color:#333 !important;margin-left:0;text-decoration:underline;padding:0;border:0;font-family:'Spoca Han Sans Neo', 'sans-serif'}
 .result_noresult{position:relative;margin:96px 70px 93px;line-height:22px;letter-spacing:-1px}
 .result_noresult p{font-size:18px;font-weight:bold;letter-spacing:-1px;color:#333;word-break:break-all}
 .result_noresult p strong{color:#3f63bf}
 .result_noresult ul{overflow:hidden;_width:100%;padding:10px 0 14px;font-size:13px;color:#7d7d7d}
 .banner_economy{padding:15px 0 3px}
 .html{margin:1px 0 4px;_margin-top:20px;overflow:hidden}
-div .font1{font-family:'Noto Serif KR', serif}
+div .font1{font-family:'Spoca Han Sans Neo', 'sans-serif'}
 div .font1 p[style*="font-family"],div .font1 h1[style*="font-family"],div .font1 h2[style*="font-family"],div .font1 h3[style*="font-family"],div .font1 h4[style*="font-family"],div .font1 h5[style*="font-family"],div .font1 h6[style*="font-family"],div .font1 ul[style*="font-family"],div .font1 ol[style*="font-family"],div .font1 li[style*="font-family"],div .font1 dl[style*="font-family"],div .font1 dt[style*="font-family"],div .font1 dd[style*="font-family"],div .font1 table[style*="font-family"],div .font1 th[style*="font-family"],div .font1 td[style*="font-family"],div .font1 strong[style*="font-family"],div .font1 a[style*="font-family"],div .font1 b[style*="font-family"],div .font1 span[style*="font-family"],div .font1 font[style*="font-family"]{font-family:"굴림",gulim,Sans-serif !important}
-div .font2{font-family:'Noto Serif KR', serif}
+div .font2{font-family:'Spoca Han Sans Neo', 'sans-serif'}
 div .font2 p[style*="font-family"],div .font2 h1[style*="font-family"],div .font2 h2[style*="font-family"],div .font2 h3[style*="font-family"],div .font2 h4[style*="font-family"],div .font2 h5[style*="font-family"],div .font2 h6[style*="font-family"],div .font2 ul[style*="font-family"],div .font2 ol[style*="font-family"],div .font2 li[style*="font-family"],div .font2 dl[style*="font-family"],div .font2 dt[style*="font-family"],div .font2 dd[style*="font-family"],div .font2 table[style*="font-family"],div .font2 th[style*="font-family"],div .font2 td[style*="font-family"],div .font2 strong[style*="font-family"],div .font2 a[style*="font-family"],div .font2 b[style*="font-family"],div .font2 span[style*="font-family"],div .font2 font[style*="font-family"]{font-family:"돋움",dotum,Helvetica,Sans-serif !important}
-div .font4{font-family:'Noto Serif KR', serif}
+div .font4{font-family:'Spoca Han Sans Neo', 'sans-serif'}
 div .font4 p[style*="font-family"],div .font4 h1[style*="font-family"],div .font4 h2[style*="font-family"],div .font4 h3[style*="font-family"],div .font4 h4[style*="font-family"],div .font4 h5[style*="font-family"],div .font4 h6[style*="font-family"],div .font4 ul[style*="font-family"],div .font4 ol[style*="font-family"],div .font4 li[style*="font-family"],div .font4 dl[style*="font-family"],div .font4 dt[style*="font-family"],div .font4 dd[style*="font-family"],div .font4 table[style*="font-family"],div .font4 th[style*="font-family"],div .font4 td[style*="font-family"],div .font4 strong[style*="font-family"],div .font4 a[style*="font-family"],div .font4 b[style*="font-family"],div .font4 span[style*="font-family"],div .font4 font[style*="font-family"]{font-family:"맑은 고딕","malgun gothic",Sans-serif !important}
-div .font5{font-family:'Noto Serif KR', serif}
+div .font5{font-family:'Spoca Han Sans Neo', 'sans-serif'}
 div .font5 p[style*="font-family"],div .font5 h1[style*="font-family"],div .font5 h2[style*="font-family"],div .font5 h3[style*="font-family"],div .font5 h4[style*="font-family"],div .font5 h5[style*="font-family"],div .font5 h6[style*="font-family"],div .font5 ul[style*="font-family"],div .font5 ol[style*="font-family"],div .font5 li[style*="font-family"],div .font5 dl[style*="font-family"],div .font5 dt[style*="font-family"],div .font5 dd[style*="font-family"],div .font5 table[style*="font-family"],div .font5 th[style*="font-family"],div .font5 td[style*="font-family"],div .font5 strong[style*="font-family"],div .font5 a[style*="font-family"],div .font5 b[style*="font-family"],div .font5 span[style*="font-family"],div .font5 font[style*="font-family"]{font-family:"나눔고딕",nanumgothic,Sans-serif !important}
 .size1{font-size:14px;line-height:24px}
 .size1 h4{font-size:14px;line-height:24px;letter-spacing:-0.5px}
