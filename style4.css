@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Sunflower:wght@300&display=swap');
 @font-face {
-  font-family: Spoqa Han Sans Neo;
-  src: local(SpoqaHanSansNeo-Bold),
-       url(SpoqaHanSansNeo-Bold.woff) format('woff'),
-  font-style: bold;
-  font-weight: bold;
+  font-family: 'Black And White Picture', sans-serif;
 }
 
 
 
 @charset "UTF-8";
 body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,figure{margin:0;padding:0}
-body,table,table td,input,select,textarea{font-size:12px;font-family: 'Spoqa Han Sans Neo', sans-serif;}
+body,table,table td,input,select,textarea{font-size:12px;font-family: 'Black And White Picture', sans-serif;}
 body{color:#000;font-size:12px;text-align:center;background:#fff}
 li{list-style:none}
 hr{display:none}
@@ -62,9 +59,9 @@ input.text02{width:100%;height:28px;padding:4px 8px 8px;border:1px solid #e5e5e5
 .section_index .writing{margin-left:4px;vertical-align:top}
 .newspaper_info + .writing,.r_vod_txt + .writing,.writing + .writing{margin-left:-3px}
 .date + .writing,.lede + .writing,.icon + .writing,.icon_photo + .writing{margin-left:0}
-.writing2{margin:0 0 0 10px;font-size:12px;font-family:'Spoca Han Sans Neo', sans-serif;color:#888}
-.relative_article{font-size:12px;font-family:'Spoca Han Sans Neo', sans-serif;color:#888}
-.writer{display:inline-block;margin:0 0 0 10px;font-size:11px;color:#909090;letter-spacing:0px}
+.writing2{margin:0 0 0 10px;font-size:12px;font-family:'Spoca Han Sans Neo', 'sans-serif';color:#888}
+.relative_article{font-size:12px;font-family:'Spoca Han Sans Neo', 'sans-serif';color:#888}
+.writer{display:inline-block;margin:0 0 0 10px;font-size:11px;color:#909090;letter-spacing:-1px}
 .writer2{margin-left:5px;padding-left:5px;color:#909090;font-size:11px;font-weight:normal;background:url(https://ssl.pstatic.net/static.news/image/news/2009/bar_date.gif) no-repeat;letter-spacing:-1px;line-height:13px}
 #container .date,.op_container .date,.container .date{position:relative;display:inline-block;color:#888;font-size:12px;font-weight:normal;letter-spacing:0;padding-left:14px}
 #container .date:after,.op_container .date:after,.container .date:after{content:'';display:block;width:1px;height:11px;position:absolute;top:50%;left:7px;background-color:#dedede;margin-top:-6px}
