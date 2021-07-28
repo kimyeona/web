@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+article:hover .overlay {
+  height: 70%;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+  grid-gap: 15px;
+  row-gap: 15px;
+}
+article {
+  position: relative;
+}
+.article-img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  opacity: 80%;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  color: #000;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+@media (min-width: 700px){
+  .cards {
+    max-width: 1fr;
+    margin: 15px 15px 15px 15px;
+    }
+  }
