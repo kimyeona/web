@@ -1,27 +1,104 @@
+@import url("https://use.typekit.net/way7gmx.css");
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
 
-article:hover .overlay {
-  height: 70%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#mobile {
+  display: none;
+  overflow-y: hidden;
+}
+#open {
+  display: none;
 }
 
-p {
-  font-family: 'Inconsolata', monospace;
-  font-weight: 400;
+/*navigation*/
+header {
+  height: 120px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
 }
+li, a {
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: #000;
+  font-size: 17.5px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+}
+.logo {
+  float: none;
+  cursor: pointer;
+}
+.nav_links {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav_links li {
+  display: inline-block;
+  padding-right: 20px;
+}
+.sns {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.sns li {
+  display: inline-block;
+  align-items: center;
+  padding-left: 18px;
+}
+
+
+/* body */
 .cards {
+  /*
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-auto-columns: 1fr;
 
+  padding: 0 4%;
   grid-gap: 15px;
   row-gap: 15px;
 }
+
+
+
+article:hover .overlay {
+  height: 60%;
+}
+article p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+}
 article {
   position: relative;
+  flex-grow: 1;
 }
 .article-img {
-  display: block;
-  height: 400px;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  max-width: 100%;
   object-fit: cover;
 }
 .overlay {
@@ -36,10 +113,7 @@ article {
   height: 0;
   transition: .5s ease;
 }
-
 .text {
-  color: #000;
-  font-size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,11 +122,124 @@ article {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.year {
+  padding-bottom: 5px;
+}
 
 
-@media (min-width: 700px){
-  .cards {
-    max-width: 1fr;
-    margin: 15px 15px 15px 15px;
-    }
+/*footer*/
+.footer {
+  position: relative;
+  width: 100%
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.footer p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 13.5px;
+  padding-top: 0px;
+}
+
+
+/*responsive*/
+
+
+@media (max-width: 770px){
+  body {
+    overflow-x: hidden;
   }
+  header {
+    margin-left: 40%;
+  }
+  .logo {
+  }
+  #open {
+    display: block;
+    padding: 10px;
+  }
+  .line {
+    width: 24px;
+    height: 1.5px;
+    background-color: #282828;
+    margin-bottom: 4.5px;
+  }
+  .nav_links {
+    display: none;
+  }
+  .sns {
+    display: none;
+  }
+  .close_icon {
+    position: absolute;
+    right: 32px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .close_icon:before, .close_icon:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 1.5px;
+    background-color: #282828;
+  }
+  .close_icon:before {
+    transform: rotate(45deg);
+  }
+  .close_icon:after {
+    transform: rotate(-45deg);
+  }
+
+  .nav_mobile {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_mobile a {
+    font-size: 23px;
+    display: inline-block;
+    padding-bottom: 25px;
+    padding-right: 0px;
+  }
+  .sns_mobile {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #fff;
+    height: 11vh;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid #ebebeb;
+  }
+
+  /*body*/
+  .article-img {
+    width: 100%;
+    height: auto;
+  }
+  article:hover .overlay {
+    height: 40%;
+  }
+}
