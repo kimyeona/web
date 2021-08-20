@@ -1,0 +1,262 @@
+@import url("https://use.typekit.net/way7gmx.css");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('Helvetica-Bold.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Helvetica' ,'Spoqa Han Sans Neo', 'sans-serif';
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+/*responsive display none*/
+#mobile {
+  display: none;
+  overflow-y: hidden;
+}
+#open {
+  display: none;
+}
+.nav_mobile {
+  display: none;
+}
+.sns_mobile {
+  display:none;
+}
+
+/*navigation*/
+
+header {
+
+  height: 120px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+ul {
+  align-items: center;
+}
+li, a {
+  list-style: none;
+  text-decoration: none;
+
+}
+header a {
+  color: #000;
+  font-size: 15px;
+  font-family: 'Helvetica-Bold', sans-serif;
+
+}
+.logo {
+  float: none;
+  cursor: pointer;
+}
+.nav_links {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav_links li {
+  display: inline-block;
+  padding-right: 24px;
+}
+.sns {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sns li {
+  display: inline-block;
+  align-items: center;
+  padding-left: 17px;
+}
+
+/*footer*/
+.footer {
+  position: relative;
+  width: 100%
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.footer p {
+  font-family: 'Helvetica-Bold', sans-serif;
+  font-size: 11px;
+  padding-top: 0px;
+}
+
+
+/*main*/
+main {
+  display: block;
+  margin: auto;
+  padding: 0 5%;
+  font-family: 'Helvetica', 'Spoqa Han Sans Neo', sans-serif;
+  word-break: keep-all;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2 {
+  max-width: 1000px;
+  margin: auto;
+  border-top: 2px solid;
+  margin-top: 5px;
+}
+.row2 li{
+  list-style: none;
+  cursor: pointer;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 8px;
+}
+
+
+.arrow {
+  display: none;
+}
+
+
+        .one:hover ~ .three ~.two {
+                color: #CFCFCF;
+        }
+
+
+
+/*responsive*/
+
+
+@media (max-width: 770px){
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    margin-left: 40%;
+    padding: 0 4%;
+  }
+  .logo {
+    display: block;
+    justify-content: center;
+  }
+  #open {
+    display: block;
+    padding: 10px;
+  }
+  .line {
+    width: 24px;
+    height: 1.5px;
+    background-color: #282828;
+    margin-bottom: 4.5px;
+  }
+  .nav_links {
+    display: none;
+  }
+  .sns {
+    display: none;
+  }
+
+  .close_icon {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    width: 29px;
+    height: 29px;
+  }
+  .close_icon:before, .close_icon:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 1.5px;
+    background-color: #282828;
+  }
+  .close_icon:before {
+    transform: rotate(45deg);
+  }
+  .close_icon:after {
+    transform: rotate(-45deg);
+  }
+
+  .nav_mobile {
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 95vh;
+    width: 100%;
+    background-color: #fff;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    transition: 2s ease-in;
+    opacity: 1;
+  }
+  .nav_mobile a {
+    font-family: 'Helvetica-Bold', sans-serif;
+    font-size: 22px;
+    color: #000;
+    display: inline-block;
+    padding-bottom: 30px;
+    padding-right: 0px;
+  }
+  .sns_mobile {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color: #fff;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid #ebebeb;
+  }
+  .sns_mobile li {
+    margin: 0px 16px;
+  }
+}
+
+  /*body*/
