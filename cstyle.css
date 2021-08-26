@@ -1,6 +1,14 @@
 @import url("https://use.typekit.net/way7gmx.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@font-face {
+    font-family: 'Helvetica-Now';
+    src: url('Helvetica-Now.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 @font-face {
     font-family: 'Helvetica-Bold';
     src: url('Helvetica-Bold.woff') format('woff'); /* Modern Browsers */
@@ -9,14 +17,7 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-@font-face {
-    font-family: 'Helvetica';
-    src: url('Helvetica.woff') format('woff'); /* Modern Browsers */
 
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 
 * {
   box-sizing: border-box;
@@ -25,7 +26,7 @@
 }
 
 body {
-  font-family:'Helvetica' ,'Spoqa Han Sans Neo', 'sans-serif';
+  font-family:'Helvetica-Now' ,'Noto Sans KR', sans-serif;
   opacity: 0;
   transition: opacity .5s;
 }
@@ -34,6 +35,10 @@ body {
 #mobile {
   display: none;
   overflow-y: hidden;
+}
+#mobile li, a {
+  list-style: none;
+  text-decoration: none;
 }
 #open {
   display: none;
@@ -57,7 +62,7 @@ header {
 ul {
   align-items: center;
 }
-li, a {
+header li, a {
   list-style: none;
   text-decoration: none;
 }
@@ -76,9 +81,9 @@ header a {
   list-style: none;
   display: flex;
   justify-content: flex-start;
+  line-height: 25px;
 }
 .nav_links li {
-  display: inline-block;
   padding-right: 24px;
 }
 .sns {
@@ -117,7 +122,7 @@ main {
   display: block;
   margin: auto;
   padding: 0 5%;
-  font-family: 'Helvetica', 'Spoqa Han Sans Neo', sans-serif;
+  font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
   word-break: keep-all;
 }
 
@@ -141,13 +146,15 @@ main {
 
 .row {
   line-height: 1.6em;
-  font-size: 15px;
+  font-size: 17px;
+
   margin-top: 30px;
 
 }
 .left p {
   padding-top: 15px;
   max-width: 90%;
+  font-weight: 300;
   font-size: 22px;
   line-height: 32px;
 }
@@ -168,12 +175,13 @@ main {
   }
   .sec {
     padding: 15px 0 20px;
-    font-family: 'Helvetica-Bold';
-    font-size: 17px;
-    line-height: 25px;
+    font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
   }
   .txt {
     padding-bottom: 60px;
+    font-family: 'Noto Sans KR', sans-serif;
   }
   .btn {
     display: flex;
@@ -182,16 +190,13 @@ main {
     margin-top: 15px;
     border-radius: 400px;
     padding: 10px 5px;
-    width: 125px;
+    width: 135px;
     justify-content: center;
 
-    font-family: 'Helvetica-Bold';
+    font-family: 'Helvetica-Now';
     color: #fff;
     border: 2px solid #000;
     transition: 0.2s ease-in;
-  }
-  .small {
-    font-size: 11px;
   }
 
   .btn:hover {
@@ -200,6 +205,18 @@ main {
   }
   a {
     color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    list-style-type: "-";
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+    padding-left: 5px;
+    list-style-position: outside;
+    margin-left: 10px;
   }
 
 
@@ -303,6 +320,12 @@ main {
   }
   .sns_mobile li {
     margin: 0px 16px;
+  }
+}
+
+@media (max-width: 1078px){
+  .nav_links {
+    flex-wrap: wrap;
   }
 }
 

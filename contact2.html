@@ -104,20 +104,19 @@
 
 /*Question*/
           .question {
-            font-family: 'Helvetica', sans-serif;
             position: relative;
             margin: 0;
             display: flex;
             align-items: center;
-            width:100%;
+            width: 100%;
             cursor: pointer;
             height: 45px;
+            font-size: 22px;
 
           }
 
 /*Answer*/
           .answers {
-            font-family: 'Helvetica', sans-serif;
             margin: 0;
             width: 100%!important;
             height: 0;
@@ -129,13 +128,13 @@
           }
 
           .text {
-            font-size: 15px;
-            line-height: 1.5em;
+            font-size: 17px;
+            line-height: 1.6em;
             padding-top: 15px;
           }
           .caption {
-            font-size: 13px;
-            line-height: 19px;
+            font-size: 17px;
+            line-height: 1.6em;
           }
 
           .questions:checked ~ .answers{
@@ -166,67 +165,36 @@
 
           label::after {
             content: '+';
-            font-size: 20px;
+            font-size: 25px;
             font-weight: normal;
             position: absolute;
-            left: 75px;
+            left: 105px;
             top: 10px;
           }
 
           input:checked + label::after {
-            content: '-';
-            font-size: 25px;
-            left: 75px;
-            top: 10px;
-          }
-
-          .row2 {
-            width: 100%;
-            padding-top: 15px;
+            content: '—';
+            font-size: 20px;
+            left: 105px;
+            top: 9px;
           }
           .column {
             float: left;
             width: 33.3%;
             padding-right: 30px;
             padding-bottom: 30px;
-            padding-top: 20px;
-            font-size: 13px;
+            padding-top: 35px;
+            font-family: 'Noto Sans KR', sans-serif
 
           }
-          .column p{
-            max-width: 230px;
+          .column li {
+            max-width: 300px;
           }
-          strong {
-            font-weight: normal;
-            font-size: 13px;
-            font-family: 'Helvetica-Bold', 'SpoqaHanSansNeo', sans-serif;
-            font-weight: bold;
-          }
+
           .under {
-
-
             border-bottom: 2px solid;
           }
-          .social {
-            padding-top: 5px;
-            
-          }
-          .sec2 {
-            line-height:
-          }
-          .gray {
-            color: #999;
-          }
-          .txt2 .social a {
-            text-decoration: none;
-            color: #000;
-          }
-            .txt2{
-              padding-bottom: 30px;
-              color: #000;
-              font-size: 22px;
-              line-height: 30px;
-            }
+
 
 
 
@@ -251,31 +219,29 @@
             }
           });
         }
-
-        /* changing text */
+<!--
+        /* changing text
         function change_text()
         {
         if(document.getElementById("toggle_button").innerHTML=="See More"){
         document.getElementById("toggle_button").innerHTML="See Less";
         }else{
             document.getElementById("toggle_button").innerHTML="See More";
-        }}
+        }}  */
         </script>
 
                 <div class="row">
 
                   <div class="left">
-                    <p>프로젝트 의뢰 및 기타 문의는 이메일로 받고 있습니다. 우측 메일 주소로 구체적인 내용, 일정 등을 보내주시면, 검토 후 빠른 시일 내로 회신 드리겠습니다.</p>
-                    <div class="txt" style="padding-top: 15px;"><p style="font-size: 13px; line-height: 19px">*대표전화: 02-743-8065<br>*매거진 광고 및 문의: 070-7771-7409</p></div>
+                    <p>프로젝트 의뢰 및 기타 문의는 이메일로 받고 있습니다. 우측 메일 주소로 구체적인 내용, 일정 등을 보내주시면, 검토 후 빠른 시일 내로 회신 드리겠습니다.
+                    <br><br>*대표전화: 02-743-8065<br>*매거진 광고 및 문의: 070-7771-7409</p>
                   </div>
 
                   <div class="right">
                     <div class="content">
-                      <div class="sec">AG Design<span class="gray"> / Creative, Strategy</span></div>
-                      <div class="txt2">
-                        <a href="mailto:design@ag.co.kr" style='color: #000;'><span class="under">design@ag.co.kr</span></a>
-                        <div class="social">T. 02-763-2303<br><a href="https://www.behance.net/ahngraphics">Behance<a> / <a href="https://www.instagram.com/ahn.graphics/?hl=ko">Instagram</a> / <a href="https://www.youtube.com/channel/UCmjRDpALWO6yVr-6xaoJWwA/featured">Youtube</a>
-                        </div>
+                      <div class="sec">AG Design (Creative, Strategy)
+                        <br><br>
+                        <a href="mailto:design@ag.co.kr" style='color: #000;'>design@ag.co.kr</a><br>T. 02-763-2303
                       </div>
 
                         <input type="checkbox" id="question1" name="q" class="questions">
@@ -284,89 +250,86 @@
                         </label>
                         <div class="answers">
                           <div class="text"><p>안그라픽스 디자인사업부만의 전략과 창의성은 다양한 크리에이티브 영역에서 최선의 결과를 만들어내고 있습니다.</p></div>
-                          <div class="row2">
                           <div class="caption column">
-                            <p style="padding-bottom: 7px;"><strong>디자인 전략</strong></p>
-                              <ul class="list">
-                                <li>· 삼성전자 디자인철학 스토리북</li>
-                                <li>· 한국관광안내표지 표준디자인 가이드</li>
-                                <li>· 한국관광안내표지 고도화 연구</li>
-                                <li>· 통영 박경리기념관 리모델링 연구</li>
-                                <li>· 신세계 매거진 콘셉트 제안</li>
-                                <li>· 아모레퍼시픽 아리따글꼴 인지도 조사 및 홍보</li>
-                                <li>· 인천공항 입국장 내 문화콘텐츠 적용 기초연구</li>
+                            <p style="padding-bottom: 7px;">디자인 전략</p>
+                              <ul>
+                                <li>삼성전자 디자인철학 스토리북</li>
+                                <li>한국관광안내표지 표준디자인 가이드</li>
+                                <li>한국관광안내표지 고도화 연구</li>
+                                <li>통영 박경리기념관 리모델링 연구</li>
+                                <li>신세계 매거진 콘셉트 제안</li>
+                                <li>아모레퍼시픽 아리따글꼴 인지도 조사 및 홍보</li>
+                                <li>인천공항 입국장 내 문화콘텐츠 적용 기초연구</li>
                               </ul>
                             </div>
                           <div class="caption column">
-                            <p style="padding-bottom: 7px;"><strong>크리에이티브 디자인</strong></p>
+                            <p style="padding-bottom: 7px;">크리에이티브 디자인</p>
                               <ul>
-                                <li>· 대한민국 민주주의 100주년 전시</li>
-                                <li>· 삼성 기어 워치페이스 디자인 프로젝트</li>
-                                <li>· 땅에서도 이루어지소서: 한국 천주교회 230년 그리고 서울</li>
-                                <li>· 아모레퍼시픽 아리따 흑체, 부리 프레스킷</li>
+                                <li>대한민국 민주주의 100주년 전시</li>
+                                <li>삼성 기어 워치페이스 디자인 프로젝트</li>
+                                <li>땅에서도 이루어지소서: 한국 천주교회 230년 그리고 서울</li>
+                                <li>아모레퍼시픽 아리따 흑체, 부리 프레스킷</li>
                               </ul>
                             </div>
                           <div class="caption column">
-                            <p  style="padding-bottom: 7px;"><strong>에디토리얼 디자인</strong></p>
+                            <p style="padding-bottom: 7px;">에디토리얼 디자인</p>
                               <ul>
-                                <li>· 금호 아트홀 에디토리얼</li>
-                                <li>· 대우 E&C 매거진 ‘대우건설인’</li>
-                                <li>· 대우 푸르지오 매거진 ‘노빌리티’</li>
-                                <li>· 아주그룹 매거진 ‘아주좋은날’</li>
-                                <li>· S/S TUNED 매거진</li>
-                                <li>· 한샘 50주년 사사</li>
-                                <li>· 아모레퍼시픽 ‘아리따 글꼴 여정’</li>
-                                <li>· 광주비엔날레 전시 도록</li>
-                                <li>· 평창올림픽 브랜드북</li>
-                                <li>· 타이포잔치 도록</li>
-                                <li>· 롯데제과 50주년</li>
-                                <li>· 현대카드 DESIGN without WORDS 1,2</li>
-                                <li>· 네이버 플레이뮤지엄</li>
+                                <li>금호 아트홀 에디토리얼</li>
+                                <li>대우 E&C 매거진 ‘대우건설인’</li>
+                                <li>대우 푸르지오 매거진 ‘노빌리티’</li>
+                                <li>아주그룹 매거진 ‘아주좋은날’</li>
+                                <li>S/S TUNED 매거진</li>
+                                <li>한샘 50주년 사사</li>
+                                <li>아모레퍼시픽 ‘아리따 글꼴 여정’</li>
+                                <li>광주비엔날레 전시 도록</li>
+                                <li>평창올림픽 브랜드북</li>
+                                <li>타이포잔치 도록</li>
+                                <li>롯데제과 50주년</li>
+                                <li>현대카드 DESIGN without WORDS 1,2</li>
+                                <li>네이버 플레이뮤지엄</li>
                               </ul>
                             </div>
                           <div class="caption column">
-                            <p style="padding-bottom: 10px;"><strong>BX & 아이덴티티</strong></p>
+                            <p style="padding-bottom: 10px;">BX & 아이덴티티</p>
                               <ul>
-                                <li>· 신세계 발효곳간
-                                <li>· Projekt Produkt
-                                <li>· 나이키컵 브랜딩
-                                <li>· 북촌한옥마을 브랜딩
-                                <li>· 삼성화재 통합 디자인
-                                <li>· 한국관광안내표지 가이드
-                                <li>· 삼성전자 CSR 프로그램 아이덴티티
-                                <li>· 문화재청 문화유산방문캠페인 아이덴티티
+                                <li>신세계 발효곳간
+                                <li>Projekt Produkt
+                                <li>나이키컵 브랜딩
+                                <li>북촌한옥마을 브랜딩
+                                <li>삼성화재 통합 디자인
+                                <li>한국관광안내표지 가이드
+                                <li>삼성전자 CSR 프로그램 아이덴티티
+                                <li>문화재청 문화유산방문캠페인 아이덴티티
                               </ul>
                             </div>
                           <div class="caption column">
-                            <p style="padding-bottom: 10px;"><strong>디지털 디자인</strong></p>
+                            <p style="padding-bottom: 10px;">디지털 디자인</p>
                               <ul>
-                                <li>· CJ 대한통운 글로벌 통합 웹사이트</li>
-                                <li>· CJ 소통채널 디자인</li>
-                                <li>· CJ World 인트라넷 리뉴얼 </li>
-                                <li>· 한국영상자료원 웹사이트 리뉴얼</li>
-                                <li>· 투썸플레이스 App 리뉴얼</li>
-                                <li>· 한화생명 라이프스타일 큐레이션 App ZUMO</li>
+                                <li>CJ 대한통운 글로벌 통합 웹사이트</li>
+                                <li>CJ 소통채널 디자인</li>
+                                <li>CJ World 인트라넷 리뉴얼 </li>
+                                <li>한국영상자료원 웹사이트 리뉴얼</li>
+                                <li>투썸플레이스 App 리뉴얼</li>
+                                <li>한화생명 라이프스타일 큐레이션 App ZUMO</li>
                               </ul>
                             </div>
                           <div class="caption column">
-                            <p style="padding-bottom: 10px;"><strong>콘텐츠/마케팅</strong></p>
+                            <p style="padding-bottom: 10px;">콘텐츠/마케팅</p>
                               <ul>
-                                <li>· 삼성화재 디지털매체 콘텐츠</li>
-                                <li>· 유니클로 온/오프라인 디자인</li>
-                                <li>· GU 오프라인 광고물 위탁 제작</li>
-                                <li> · 한국관광공사 대한민국 구석구석 SNS 통합 운영</li>
+                                <li>삼성화재 디지털매체 콘텐츠</li>
+                                <li>유니클로 온/오프라인 디자인</li>
+                                <li>GU 오프라인 광고물 위탁 제작</li>
+                                <li> 한국관광공사 대한민국 구석구석 SNS 통합 운영</li>
                               </ul>
                             </div>
                         </div>
                       </div>
-                  </div>
+
 
                   <div class="content">
-                    <div class="sec">AGTI<span class="gray"> / Font</span></div>
-                    <div class="txt2">
-                      <a href="mailto:typo@ag.co.kr" style='color: #000;'><span class="under">typo@ag.co.kr</span></a>
-                      <div class="social">T. 070-7771-7406<br><a href="https://www.agfont.com" style='color: #000;'>Homepage</a> / <a href="https://www.instagram.com/ag.typography.institute/">Instagram</a>
-                      </div>
+                    <div class="sec">AGTI (Font)
+                    <br><br>
+                      <a href="mailto:typo@ag.co.kr" style='color: #000;'>typo@ag.co.kr</a><br>T. 070-7771-7406
                     </div>
 
                     <input type="checkbox" id="question2" name="q" class="questions">
@@ -376,30 +339,28 @@
                     <div class="answers">
                       <div class="text"><p>AG 타이포그라피연구소는 연구를 바탕으로 글꼴을 멋짓고 키우며 새로운 글꼴 문화와 흐름을 만들고 있습니다. </p></div>
                       <div class="caption column">
-                        <p style="padding-bottom: 10px;"><strong>대표 프로젝트</strong></p>
+                        <p style="padding-bottom: 10px;">대표 프로젝트</p>
                           <ul>
-                            <li>· 네이버문화재단 〈한글한글아름답게〉 캠페인의 ‘마루’ 프로젝트</li>
-                            <li>· 아모레퍼시픽 ‘아리따체’</li>
-                            <li>· 대한불교조계종 ‘석보체’</li>
-                            <li>· 신세계백화점 ‘신세계체’</li>
-                            <li>· 국악방송 로고타입</li>
+                            <li>네이버문화재단 <한글한글아름답게> 캠페인의 ‘마루’ 프로젝트</li>
+                            <li>아모레퍼시픽 ‘아리따체’</li>
+                            <li>대한불교조계종 ‘석보체’</li>
+                            <li>신세계백화점 ‘신세계체’</li>
+                            <li>국악방송 로고타입</li>
                           </ul>
                         </div>
                       <div class="caption column">
-                        <p style="padding-bottom: 10px;"><strong>글꼴</strong></p>
+                        <p style="padding-bottom: 10px;">글꼴</p>
                           <ul>
-                            <li>· 안상수체, 이상체, 미르체, 마노체, 둥근안상수체, 초특태고딕체, 최정호체, 훈민정음체 개발</li>
+                            <li>안상수체, 이상체, 미르체, 마노체, 둥근안상수체, 초특태고딕체, 최정호체, 훈민정음체 개발</li>
                           </p>
                         </div>
                     </div>
                   </div>
 
                     <div class="content">
-                      <div class="sec">AG Publishing<span class="gray"> / Books</span></div>
-                      <div class="txt2">
-                        <a href="mailto:pub@ag.co.kr" style='color: #000;'><span class="under">pub@ag.co.kr</span></a>
-                        <div class="social">T. 031-955-7744<br><a href="https://www.agbook.co.kr">Homepage</a> / <a href="https://www.instagram.com/ahngraphics/?hl=koInstagram">Instagram</a>
-                        </div>
+                      <div class="sec">AG Publishing (Books)
+                      <br><br>
+                        <a href="mailto:pub@ag.co.kr" style='color: #000;'>pub@ag.co.kr</a><br>T. 031-955-7744
                       </div>
 
                       <input type="checkbox" id="question3" name="q" class="questions">
@@ -412,10 +373,9 @@
                     </div>
 
                     <div class="content">
-                      <div class="sec">AG Media<span class="gray"> / Magazine</span></div>
-                      <div class="txt2">
-                        <a href="mailto:media@ag.co.kr" style='color: #000;'><span class="under">media@ag.co.kr</span></a>
-                        <div class="social">T. 070-7771-7409
+                      <div class="sec">AG Media (Magazine)
+                      <br><br>
+                        <a href="mailto:media@ag.co.kr" style='color: #000;'>media@ag.co.kr</a><br>T. 070-7771-7409
                         </div>
                       </div>
 
@@ -425,24 +385,22 @@
                       </label>
                       <div class="answers">
                         <div class="caption column">
-                          <p style="padding-bottom: 10px;"><strong>대표 프로젝트</strong></p>
+                          <p style="padding-bottom: 10px;">대표 프로젝트</p>
                             <ul>
-                              <li>· 신세계 매거진</li>
-                              <li>· 올리브 매거진</li>
-                              <li>· 론리플래닛 매거진</li>
-                              <li>· 아시아나 기내지</li>
-                              <li>· GMT KOREA 매거진</li>
+                              <li>신세계 매거진</li>
+                              <li>올리브 매거진</li>
+                              <li>론리플래닛 매거진</li>
+                              <li>아시아나 기내지</li>
+                              <li>GMT KOREA 매거진</li>
                             </ul>
                           </div>
                       </div>
-                    </div>
+
 
                     <div class="content">
-                      <div class="sec">AG Image<span class="gray"> / Video</span></div>
-                      <div class="txt2">
-                        <a href="mailto:image@ag.co.kr" style='color: #000;'><span class="under">image@ag.co.kr<span></a>
-                        <div class="social">T. 02-743-8065
-                        </div>
+                      <div class="sec">AG Image (Video)
+                      <br><br>
+                        <a href="mailto:image@ag.co.kr" style='color: #000;'>image@ag.co.kr</a><br>T. 02-743-8065
                       </div>
 
                       <input type="checkbox" id="question5" name="q" class="questions">
@@ -451,25 +409,25 @@
                       </label>
                       <div class="answers">
                         <div class="caption column">
-                          <p style="padding-bottom: 10px;"><strong>대표 프로젝트</strong></p>
+                          <p style="padding-bottom: 10px;">대표 프로젝트</p>
                             <ul>
-                              <li>· 신세계 헤리티지 영상</li>
-                              <li>· 신세계 아트, 패션 eDM</li>
-                              <li>· 신세계백화점 홍보 영상</li>
-                              <li>· GMT KOREA 유튜브 영상</li>
+                              <li>신세계 헤리티지 영상</li>
+                              <li>신세계 아트, 패션 eDM</li>
+                              <li>신세계백화점 홍보 영상</li>
+                              <li>GMT KOREA 유튜브 영상</li>
                             </ul>
                           </div>
                         </div>
                       </div>
 
                     <div class="content">
-                      <div class="sec">Location</div>
-                        <div class="column" style="padding-top: 0px; font-size: 15px;">
-                          <strong style="font-size: 15px;">안그라픽스 가가집</strong>
-                          <br><span>서울시 강남구 강남대로 162길 41-20</div>
-                        <div class="column" style="padding-top: 0px; font-size: 15px;">
-                          <strong style="font-size: 15px;">안그라픽스 출판</strong>
-                          <br>경기도 파주시 회동길 125-15</div>
+                      <div class="sec">Location<br><br>
+                        <div class="column caption" style="padding-top: 0px;">
+                          안그라픽스 가가집
+                          <br>서울시 강남구 강남대로 162길 41-20</div>
+                        <div class="column caption" style="padding-top: 0px;">
+                          안그라픽스 출판
+                          <br>경기도 파주시 회동길 125-15</div></div>
                         </div>
 
                     </div>
