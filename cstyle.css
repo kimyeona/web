@@ -290,7 +290,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    background-color: red;
+
     transition: 2s ease-in;
     opacity: 1;
   }
