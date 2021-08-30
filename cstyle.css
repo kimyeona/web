@@ -84,6 +84,7 @@ header a {
   float: none;
   cursor: pointer;
   margin-top: 3px;
+  margin-left: 2px;
 }
 .nav_links {
   width: 30%;
