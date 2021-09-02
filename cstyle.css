@@ -46,7 +46,9 @@ body {
 }
 
 /*navigation*/
+
 header {
+
   height: 120px;
   display: flex;
   position: relative;
@@ -60,25 +62,26 @@ ul {
 li, a {
   list-style: none;
   text-decoration: none;
+
 }
 header a {
   color: #000;
   font-size: 15px;
   font-family: 'Helvetica-Bold', sans-serif;
+
 }
 .logo {
   float: none;
   cursor: pointer;
-  margin-top: 3px;
 }
 .nav_links {
   width: 30%;
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  line-height: 25px;
 }
 .nav_links li {
+  display: inline-block;
   padding-right: 24px;
 }
 .sns {
@@ -87,10 +90,10 @@ header a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 5px;
 }
 .sns li {
   display: inline-block;
+  align-items: center;
   padding-left: 17px;
 }
 
@@ -126,81 +129,31 @@ main {
   display: table;
   clear: both;
 }
-.left {
-  float: left;
-  width: 32%;
 
-    margin-right: 3%;
-            border-top: 2px solid;
+.row2 {
+  max-width: 1000px;
+  margin: auto;
+  border-top: 2px solid;
+  margin-top: 5px;
+}
+.row2 li{
+  list-style: none;
+  cursor: pointer;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 8px;
 }
 
-.right {
-  float: left;
-  width: 65%;
+
+.arrow {
+  display: none;
 }
 
-.row {
-  line-height: 1.6em;
-  font-size: 15px;
-  margin-top: 30px;
 
-}
-.left p {
-  padding-top: 15px;
-  max-width: 90%;
-  font-size: 22px;
-  line-height: 32px;
-}
-
-  .right:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .content {
-    float: left;
-    width: 100%;
-    border-top: 2px solid;
-  }
-  .content p {
-    max-width: 700px;
-  }
-  .sec {
-    padding: 15px 0 20px;
-    font-family: 'Helvetica-Bold';
-    font-size: 17px;
-    line-height: 25px;
-  }
-  .txt {
-    padding-bottom: 60px;
-  }
-  .btn {
-    display: flex;
-    background-color: #000;
-
-    margin-top: 15px;
-    border-radius: 400px;
-    padding: 10px 5px;
-    width: 125px;
-    justify-content: center;
-
-    font-family: 'Helvetica-Bold';
-    color: #fff;
-    border: 2px solid #000;
-    transition: 0.2s ease-in;
-  }
-  .small {
-    font-size: 11px;
-  }
-
-  .btn:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  a {
-    color: inherit;
-  }
+        .one:hover ~ .three ~.two {
+                color: #CFCFCF;
+        }
 
 
 
@@ -303,12 +256,6 @@ main {
   }
   .sns_mobile li {
     margin: 0px 16px;
-  }
-}
-
-@media (max-width: 1078px){
-  .nav_links {
-    flex-wrap: wrap;
   }
 }
 
