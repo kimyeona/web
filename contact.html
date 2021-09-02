@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AG - CONTACT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cstyle.css">
+    <link rel="shortcut icon" href="favicon.png">
+
+
+  </head>
+  <body>
+    <header>
+
+        <ul class="nav_links">
+          <li><a href="https://ag.co.kr/work">DESIGN</a></li>
+          <li><a href="https://agfont.com/" target="_blank">FONT</a></li>
+          <li><a href="https://agbook.co.kr/books/" target="_blank">BOOKS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+      <a href="https://ag.co.kr/work"><img class="logo" src="web_logo.png" alt="AG" width="55px"></a>
+
+        <ul class="sns">
+          <li><a href="https://www.behance.net/ahngraphics" target="_blank"><img src="behance.svg" width="23px"></a></li>
+          <li><a href="https://www.instagram.com/ahn.graphics/?hl=ko" target="_blank"><img src="instagram.svg" width="25px"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCmjRDpALWO6yVr-6xaoJWwA/featured target="_blank"" target="_blank"><img src="youtube.svg" width="24px"></a></li>
+          <li><a href="mailto:design@ag.co.kr target="_blank""><img src="mail.svg" width="24px"></a></li>
+        </ul>
+
+
+        <div id="open" onclick="show('mobile')">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+    </header>
+
+        <div id="mobile">
+           <div id="close"><a href="#" class="close_icon" onclick="hide('mobile')"></div>
+          <ul class="nav_mobile">
+            <li><a href="https://ag.co.kr/work">DESIGN</a></li>
+            <li><a href="https://agfont.com/" target="_blank">FONT</a></li>
+            <li><a href="https://agbook.co.kr/books/" target="_blank">BOOKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          <ul class="sns_mobile">
+            <li><a href="https://www.behance.net/ahngraphics" target="_blank"><img src="behance.svg" width="30px"></a></li>
+            <li><a href="https://www.instagram.com/ahn.graphics/?hl=ko" target="_blank"><img src="instagram.svg" width="30px"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCmjRDpALWO6yVr-6xaoJWwA/featured target="_blank"" target="_blank"><img src="youtube.svg" width="30px"></a></li>
+            <li><a href="mailto:design@ag.co.kr target="_blank""><img src="mail.svg" width="30px"></a></li>
+          </ul>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script>
+        function show(target) {
+          document.getElementById(target).style.display = 'block';
+        }
+        function hide(target) {
+          document.getElementById(target).style.display = 'none';
+        }
+
+          /* document.querySelector("#open").addEventListener('click', function() {
+          document.querySelector("#mobile").style.display = 'block';
+          document.querySelector("body").style.overflow = 'hidden';
+        });
+          document.querySelector("#close").addEventListener('click', function() {
+          document.querySelector("#mobile").style.display = 'none';
+          document.querySelector("body").style.overflow = 'visible';
+        });*/
+        /*$('#open').click(function(){
+          $('#mobile').show();
+          $('body').css("overflow", "hidden");
+        });
+        $('#close').click(function(){
+          $('#mobile').hide();
+          $('body').css("overflow", "visible");
+        }); */
+
+          window.transitionToPage = function(href) {
+          document.querySelector('body').style.opacity = 0
+          setTimeout(function() {
+            window.location.href = href
+          }, 500)
+        }
+
+          document.addEventListener('DOMContentLoaded', function(event) {
+          document.querySelector('body').style.opacity = 1
+        })
+        </script>
+
+
+
+
+      <main>
+
+        <style>
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .left {
+          float: left;
+          width: 30%;
+
+            margin-right: 5%;
+                    border-top: 2px solid;
+        }
+
+        .right {
+          float: left;
+          width: 65%;
+
+        }
+
+        .row {
+          line-height: 1.6em;
+          font-size: 15px;
+          margin-top: 50px;
+
+        }
+        .left p {
+          padding-top: 15px;
+          max-width: 270px;
+        }
+        .content {
+          border-top: 2px solid;
+        }
+        .content p {
+          max-width: 700px;
+        }
+        .sec {
+          padding: 10px 0 25px;
+          font-family: 'Helvetica-Bold';
+        }
+        .txt {
+          padding-bottom: 50px;
+        }
+          }
+        </style>
+                <div class="row">
+
+                  <div class="left">
+                    <p>프로젝트 의뢰 및 기타 문의는 이메일로 받고 있습니다. 우측 메일 주소로 구체적인 내용, 일정 등을 보내주시면, 검토 후 빠른 시일 내로 회신 드리겠습니다.</p>
+                  </div>
+
+                  <div class="right">
+                    <div class="content history">
+                      <div class="sec">AG Design (Creative, Strategy)</div>
+                      <div class="txt"><p>design@ag.co.kr<br>T. 02-763-2303</p>
+                      <div class="social" stlye="padding-top:10px">Behance / Instagram / Youtube</div></div>
+                      <div class="accordion">
+
+                      </div>
+                    </div>
+                    <div class="content philosophy">
+                      <div class="sec">AG Publishing (Books)</div>
+                      <div class="txt"><p>pub@ag.co.kr<br>T. 031-955-7744</p>
+                      <div class="social" stlye="padding-top:10px">Instagram</div></div>
+                    </div>
+                    <div class="content work">
+                      <div class="sec">AGTI (Font)</div>
+                      <div class="txt"><p>typo@ag.co.kr<br>T. 070-7771-7406</p>
+                      <div class="social" stlye="padding-top:10px">Instagram</div></div>
+                    </div>
+                    <div class="content awards">
+                      <div class="sec">AG Media (Magazine)</div>
+                      <div class="txt"><p>media@ag.co.kr<br>T. 070-7771-7409</p></div>
+                    </div>
+                    <div class="content awards">
+                      <div class="sec">AG Image (Video)</div>
+                      <div class="txt"><p>image@ag.co.kr<br>T. 02-743-8065</p></div>
+                    </div>
+
+                    </div>
+                  </div>
+
+
+
+      </main>
+
+      <div class="footer">
+        <p>© 2021 AG ALL RIGHTS RESERVED.<p>
+      </div>
+    </body>
+</html>

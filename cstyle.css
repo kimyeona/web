@@ -1,22 +1,6 @@
 @import url("https://use.typekit.net/way7gmx.css");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-@font-face {
-    font-family: 'Helvetica-Now';
-    src: url('Helvetica-Now.woff') format('woff'); /* Modern Browsers */
-
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-@font-face {
-    font-family: 'Helvetica-Now-R';
-    src: url('Helvetica-Now-R.woff') format('woff'); /* Modern Browsers */
-
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
 @font-face {
     font-family: 'Helvetica-Bold';
     src: url('Helvetica-Bold.woff') format('woff'); /* Modern Browsers */
@@ -25,7 +9,14 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+@font-face {
+    font-family: 'Helvetica';
+    src: url('Helvetica.woff') format('woff'); /* Modern Browsers */
 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
 * {
   box-sizing: border-box;
@@ -34,8 +25,7 @@
 }
 
 body {
-  font-family:'Helvetica-Now' ,'Noto Sans KR', sans-serif;
-  font-weight: 300;
+  font-family:'Helvetica' ,'Spoqa Han Sans Neo', 'sans-serif';
   opacity: 0;
   transition: opacity .5s;
 }
@@ -44,10 +34,6 @@ body {
 #mobile {
   display: none;
   overflow-y: hidden;
-}
-#mobile li, a {
-  list-style: none;
-  text-decoration: none;
 }
 #open {
   display: none;
@@ -71,7 +57,7 @@ header {
 ul {
   align-items: center;
 }
-header li, a {
+li, a {
   list-style: none;
   text-decoration: none;
 }
@@ -84,7 +70,6 @@ header a {
   float: none;
   cursor: pointer;
   margin-top: 3px;
-  margin-left: 2px;
 }
 .nav_links {
   width: 30%;
@@ -102,8 +87,7 @@ header a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 7px;
-  margin-right: 3px;
+  margin-top: 5px;
 }
 .sns li {
   display: inline-block;
@@ -133,7 +117,7 @@ main {
   display: block;
   margin: auto;
   padding: 0 5%;
-  font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
+  font-family: 'Helvetica', 'Spoqa Han Sans Neo', sans-serif;
   word-break: keep-all;
 }
 
@@ -145,25 +129,27 @@ main {
 .left {
   float: left;
   width: 32%;
-  margin-right: 3%;
-  border-top: 2px solid;
+
+    margin-right: 3%;
+            border-top: 2px solid;
 }
+
 .right {
   float: left;
   width: 65%;
 }
-.row {
-  line-height: 35px;
-  font-size: 22px;
-  margin-top: 30px;
-}
 
+.row {
+  line-height: 1.6em;
+  font-size: 15px;
+  margin-top: 30px;
+
+}
 .left p {
   padding-top: 15px;
   max-width: 90%;
-  font-weight: 300;
   font-size: 22px;
-  line-height: 35px;
+  line-height: 32px;
 }
 
   .right:after {
@@ -177,54 +163,44 @@ main {
     width: 100%;
     border-top: 2px solid;
   }
-
+  .content p {
+    max-width: 700px;
+  }
   .sec {
-    padding: 15px 0 10px;
-    font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
-    font-size: 22px;
-    line-height: 35px;
+    padding: 15px 0 20px;
+    font-family: 'Helvetica-Bold';
+    font-size: 17px;
+    line-height: 25px;
   }
   .txt {
-    padding-bottom: 80px;
-    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 60px;
   }
   .btn {
-    background-color: #fff;
+    display: flex;
+    background-color: #000;
 
-/*    margin-top: 15px;*/
+    margin-top: 15px;
     border-radius: 400px;
-    padding: 0px 15px;
-    padding-top: 2px;
+    padding: 10px 5px;
+    width: 125px;
+    justify-content: center;
 
-
-    font-size: 20px;
-    font-family: 'Helvetica-Now';
-    text-align: center;
-    color: #000;
-    border: 1px solid #000;
+    font-family: 'Helvetica-Bold';
+    color: #fff;
+    border: 2px solid #000;
     transition: 0.2s ease-in;
-    margin-left: 15px;
-
+  }
+  .small {
+    font-size: 11px;
   }
 
   .btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
   }
   a {
     color: inherit;
   }
-
-  .m ul {
-    list-style: none;
-  } /*
-  main li {
-    list-style-type: "·";
-    background-repeat: no-repeat;
-    background-position: 0px 50%;
-    padding-left: 5px;
-    list-style-position: outside;
-  }*/
 
 
 
@@ -297,7 +273,7 @@ main {
     justify-content: center;
     align-items: center;
 
-
+    background-color: red;
     transition: 2s ease-in;
     opacity: 1;
   }

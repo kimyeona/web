@@ -16,7 +16,7 @@
           <li><a href="https://ag.co.kr/work">DESIGN</a></li>
           <li><a href="https://agfont.com/" target="_blank">FONT</a></li>
           <li><a href="https://agbook.co.kr/books/" target="_blank">BOOKS</a></li>
-          <li><a href="index.html">ABOUT</a></li>
+          <li><a href="index2.html">ABOUT</a></li>
           <li><a href="contact2.html">CONTACT</a></li>
         </ul>
 
@@ -99,12 +99,21 @@
       <main>
 
         <style>
+        .txt2 .social a {
+          text-decoration: none;
+          color: #000;
+        }
+          .txt2{
+            padding-bottom: 10px;
+            color: #000;
 
+          }
 
 
 /*Question*/
           .question {
             font-family: 'Helvetica', sans-serif;
+            font-size: 15px;
             position: relative;
             margin: 0;
             display: flex;
@@ -131,7 +140,7 @@
           .text {
             font-size: 15px;
             line-height: 1.5em;
-            padding-top: 15px;
+            padding-bottom: 20px;
           }
           .caption {
             font-size: 13px;
@@ -182,52 +191,52 @@
 
           .row2 {
             width: 100%;
-            padding-top: 15px;
           }
           .column {
             float: left;
-            width: 33.3%;
+            width: 50%;
             padding-right: 30px;
             padding-bottom: 30px;
-            padding-top: 20px;
             font-size: 13px;
 
           }
           .column p{
             max-width: 230px;
           }
-          strong {
+          .column strong {
             font-weight: normal;
-            font-size: 13px;
-            font-family: 'Helvetica-Bold', 'SpoqaHanSansNeo', sans-serif;
+            font-size: 15px;
+            font-family: 'Helvetica-Bold', 'SpoqaHanSansNeo';
             font-weight: bold;
           }
           .under {
-
-
+            font-size: 18px;
+            font-family: 'Helvetica-Bold', 'SpoqaHanSansNeo';
+            font-weight: bold;
             border-bottom: 2px solid;
           }
           .social {
             padding-top: 5px;
-            
           }
           .sec2 {
             line-height:
           }
           .gray {
-            color: #999;
+            color: gray;
           }
-          .txt2 .social a {
-            text-decoration: none;
-            color: #000;
-          }
-            .txt2{
-              padding-bottom: 30px;
-              color: #000;
-              font-size: 22px;
-              line-height: 30px;
-            }
 
+          .content {
+            width: 100%;
+          }
+          .le {
+            width: 40%;
+            float: left;
+          }
+          .ri {
+            width: 60%;
+            float: left;
+            padding-top: 15px;
+          }
 
 
         </style>
@@ -271,16 +280,16 @@
 
                   <div class="right">
                     <div class="content">
-                      <div class="sec">AG Design<span class="gray"> / Creative, Strategy</span></div>
-                      <div class="txt2">
+                      <div class="sec le">AG Design<br><span class="gray">Creative, Strategy</span></div>
+                      <div class="txt2 ri">
                         <a href="mailto:design@ag.co.kr" style='color: #000;'><span class="under">design@ag.co.kr</span></a>
                         <div class="social">T. 02-763-2303<br><a href="https://www.behance.net/ahngraphics">Behance<a> / <a href="https://www.instagram.com/ahn.graphics/?hl=ko">Instagram</a> / <a href="https://www.youtube.com/channel/UCmjRDpALWO6yVr-6xaoJWwA/featured">Youtube</a>
                         </div>
-                      </div>
+
 
                         <input type="checkbox" id="question1" name="q" class="questions">
                         <label for="question1" class="question">
-                          <span class="under" id="toggle_button" onclick="change_text()">See More</span>
+                          <p id="toggle_button" onclick="change_text()">See More</p>
                         </label>
                         <div class="answers">
                           <div class="text"><p>안그라픽스 디자인사업부만의 전략과 창의성은 다양한 크리에이티브 영역에서 최선의 결과를 만들어내고 있습니다.</p></div>
@@ -356,13 +365,13 @@
                                 <li>· GU 오프라인 광고물 위탁 제작</li>
                                 <li> · 한국관광공사 대한민국 구석구석 SNS 통합 운영</li>
                               </ul>
-                            </div>
+                            </div></div>
                         </div>
                       </div>
                   </div>
 
                   <div class="content">
-                    <div class="sec">AGTI<span class="gray"> / Font</span></div>
+                    <div class="sec">AGTI<br><span class="gray">Font</span></div>
                     <div class="txt2">
                       <a href="mailto:typo@ag.co.kr" style='color: #000;'><span class="under">typo@ag.co.kr</span></a>
                       <div class="social">T. 070-7771-7406<br><a href="https://www.agfont.com" style='color: #000;'>Homepage</a> / <a href="https://www.instagram.com/ag.typography.institute/">Instagram</a>
@@ -371,7 +380,7 @@
 
                     <input type="checkbox" id="question2" name="q" class="questions">
                     <label for="question2" class="question">
-                      <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
+                      <p id="toggle_button" onclick="change_text()">See More</p>
                     </label>
                     <div class="answers">
                       <div class="text"><p>AG 타이포그라피연구소는 연구를 바탕으로 글꼴을 멋짓고 키우며 새로운 글꼴 문화와 흐름을 만들고 있습니다. </p></div>
@@ -395,7 +404,7 @@
                   </div>
 
                     <div class="content">
-                      <div class="sec">AG Publishing<span class="gray"> / Books</span></div>
+                      <div class="sec">AG Publishing<br><span class="gray">Books</span></div>
                       <div class="txt2">
                         <a href="mailto:pub@ag.co.kr" style='color: #000;'><span class="under">pub@ag.co.kr</span></a>
                         <div class="social">T. 031-955-7744<br><a href="https://www.agbook.co.kr">Homepage</a> / <a href="https://www.instagram.com/ahngraphics/?hl=koInstagram">Instagram</a>
@@ -404,7 +413,7 @@
 
                       <input type="checkbox" id="question3" name="q" class="questions">
                       <label for="question3" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
+                        <p id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
                         <div class="text"><p>안그라픽스 출판은 타이포그래피, 정보 디자인, 브랜드 디자인 및 건축 분야의 좋은 책을 기획·출간하고 있으며, 출판 분야에서 가장 전문적이고 창의적 디자인 책을 만들고 있습니다.</p></div>
@@ -412,7 +421,7 @@
                     </div>
 
                     <div class="content">
-                      <div class="sec">AG Media<span class="gray"> / Magazine</span></div>
+                      <div class="sec">AG Media<br><span class="gray">Magazine<span></div>
                       <div class="txt2">
                         <a href="mailto:media@ag.co.kr" style='color: #000;'><span class="under">media@ag.co.kr</span></a>
                         <div class="social">T. 070-7771-7409
@@ -421,7 +430,7 @@
 
                       <input type="checkbox" id="question4" name="q" class="questions">
                       <label for="question4" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
+                        <p id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
                         <div class="caption column">
@@ -438,7 +447,7 @@
                     </div>
 
                     <div class="content">
-                      <div class="sec">AG Image<span class="gray"> / Video</span></div>
+                      <div class="sec">AG Image<br><span class="gray">Video</span></div>
                       <div class="txt2">
                         <a href="mailto:image@ag.co.kr" style='color: #000;'><span class="under">image@ag.co.kr<span></a>
                         <div class="social">T. 02-743-8065
@@ -447,7 +456,7 @@
 
                       <input type="checkbox" id="question5" name="q" class="questions">
                       <label for="question5" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
+                        <p id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
                         <div class="caption column">
@@ -464,11 +473,12 @@
 
                     <div class="content">
                       <div class="sec">Location</div>
-                        <div class="column" style="padding-top: 0px; font-size: 15px;">
-                          <strong style="font-size: 15px;">안그라픽스 가가집</strong>
-                          <br><span>서울시 강남구 강남대로 162길 41-20</div>
-                        <div class="column" style="padding-top: 0px; font-size: 15px;">
-                          <strong style="font-size: 15px;">안그라픽스 출판</strong>
+                      <div class="txt">
+                        <div class="column">
+                          <strong>안그라픽스 가가집</strong>
+                          <br>서울시 강남구 강남대로 162길 41-20</div>
+                        <div class="column">
+                          <strong>안그라픽스 출판</strong>
                           <br>경기도 파주시 회동길 125-15</div>
                         </div>
 
